@@ -10,8 +10,8 @@ session = get_active_session()
 st.title("Detection Summary")
 
 # Load study codes
-with open("study_codes.txt", "r") as f:
-    all_codes = [line.strip() for line in f]
+# with open("study_codes.txt", "r") as f:
+all_codes = []
 all_codes.append("all")
 
 study_code = st.selectbox("Select a study code", all_codes)
